@@ -1,23 +1,96 @@
+body{
+  margin-top: 60px;
+}
+.banner{
+  background-color: rgb(146, 234, 206);
+  padding: 1em 0;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+  position: fixed;
+}
+/* Menú principal */
+.menu-principal ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  background-color: #009688; /* color de barra */
+}
 
-    body {
-      background-color: rgba(222, 222, 231, 0.884);
-      color: black;
-      font-family: Arial, sans-serif;
-    }
-    h1, h2, p {
-      text-align: center;
-    }
-    img {
-      display: block;
-      margin: 0 auto;
-    }
-    table {
-      width: 50%;
-      margin: 0 auto;
-      border-collapse: collapse;
-    }
-    td {
-      padding: 10px;
-      text-align: center;
-    }
-  
+.menu-principal ul li {
+  position: relative; /* necesario para que el submenu se posicione relativo al padre */
+}
+
+.menu-principal ul li a {
+  display: block;
+  padding: 10px 15px;
+  color: white;
+  text-decoration: none;
+}
+
+.menu-principal ul li a:hover {
+  background-color: #00796b; /* al pasar el mouse */
+}
+
+.submenu {
+  display:none; /* oculto por defecto */
+  position: absolute;
+  top: 100%;  /* aparece debajo */
+  left: 0;
+  background-color: white;
+  min-width: 150px;
+  z-index: 1000; /* muestra por encima de los otros objetos*/
+  /*flex-direction: column; /* por si acaso */
+}
+
+.submenu li a {
+  color: black;
+  padding: 10px;
+}
+
+.submenu li a:hover {
+  background-color: #f0f0f0;
+}
+
+/* Mostrar el submenu al pasar el mouse */
+.menu-principal ul li:hover .submenu {
+  display: block;
+}
+
+
+.form_contacto {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;                 /* espacio entre campos */
+  max-width: 400px;
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 8px;
+
+  margin: 40px auto;         /* separa y centra horizontalmente */
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* sombra ligera */
+}
+
+.form_contacto input,
+.form_contacto textarea {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.form_contacto textarea {
+  resize: vertical; /* permite cambiar el tamaño verticalmente */
+  min-height: 80px;
+}
+
+.form_contacto h3 {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.form_contacto button {
+  margin-top: 10px;
+}
+
+html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}

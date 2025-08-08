@@ -1,36 +1,42 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
-<title>W3.CSS Template</title>
+<title>Hoja de vida Javier Vera Con plantilla W3</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
 <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<style>
-html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
-</style>
+<link rel="stylesheet" href="style.css">
 </head>
 <body class="w3-light-grey">
-   <nav>
-     <header style="background-color: chocolate">    
-         <ul>
-            <li><a href="#acerca">Acerca de mi</a></li>
-            <li><a href="#perfil">Perfil Profesional</a></li>
-            <li><a href="#experiencia">Experiencia Laboral</a></li>
-            <li><a href="#formacion">Formación Académica</a></li>
-         </ul> 
-     
-          
-      </header>
-  </Nav>
-  <!-- Page Container -->
-<div class="w3-content w3-margin-top" style="max-width:1400px;">
+   <!-- MENÚ SUPERIOR -->
+  <nav class="menu-principal">
+  <ul>
+    <li><a href="#inicio">Inicio</a></li>
+    <li><a href="#educacion">Educación</a></li>
+    <li><a href="#experiencia">Experiencia</a></li>
+    <li><a href="#habilidades">Habilidades</a></li>
+    <li><a href="#proyectos">Proyectos</a></li>
+    <!-- Submenú -->
+    <li>
+      <a href="#">Contacto ▾</a>
+      <ul class="submenu">
+        <li><a href="#formulario">Formulario</a></li>
+        <li><a href="#perfil">LinkedIn</a></li>
+        <li><a href="#correo">Correo</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+
+  <!-- Contenedor principal -->
+<main class="w3-content w3-margin-top" style="max-width:1400px;">
   <!-- The Grid -->
   <div class="w3-row-padding">
   
     <!-- Left Column -->
-    <div class="w3-third">
+    <aside class="w3-third">
     
       <div class="w3-white w3-text-grey w3-card-4">
         <div class="w3-display-container">
@@ -73,18 +79,28 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
         </div>
       </div>
     <!-- End Left Column  habilidades-->
-    </div>
+    </aside>
 
     <!-- Right Column -->
-    <div class="w3-twothird">
+    <div id="experiencia" class="w3-twothird">
     
-      <div class="w3-container w3-card w3-white w3-margin-bottom">
+      <div id="experiencia" class="w3-container w3-card w3-white w3-margin-bottom">
         <h2 class="w3-text-grey w3-padding-16">
           <i class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Experiencia Laboral</h2>
-        <div class="w3-container">
+       <div class="w3-container">
+          <h5 class="w3-opacity"><b>BootCamp Talento Tech/ github</b></h5>
+          <h6 class="w3-text-teal">
+            <i class="fa fa-calendar fa-fw w3-margin-right"></i>Julio 2025 - <span class="w3-tag w3-teal w3-round">Actualmente</span></h6>
+          <p>Actualmente me encuentro en formación acadèmico 100%virtual por las plataformas Zajuna en Técnico en programación 
+            para  <strong>aplicaciones en dispositivos móviles,</strong> al mismo tiempo en formacón en bootcamp del programa talento Tech Valle del Cauca.
+          </p>
+          <hr>          
+        </div>
+       
+          <div class="w3-container">
           <h5 class="w3-opacity"><b>Prácticas Sena / Universidad Icesi, Cali</b></h5>
           <h6 class="w3-text-teal">
-            <i class="fa fa-calendar fa-fw w3-margin-right"></i>Julio 2009 - <span class="w3-tag w3-teal w3-round">Actualmente</span></h6>
+            <i class="fa fa-calendar fa-fw w3-margin-right"></i>Julio 2009 - <span class="w3-tag w3-teal w3-round">Experiencias</span></h6>
           <p>La práctica la realizé en el área de Tic`, oficina E-learning bajo la supervición de la ingeniera Alexandra Gómez,
             dándome permisos a las siguientes plataformas de la institución para gestionar el rol de admin:
             <ul>
@@ -97,16 +113,7 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
           <hr>
 
         </div>
-        <div class="w3-container">
-          <h5 class="w3-opacity"><b>BootCamp Talento Tech/ github</b></h5>
-          <h6 class="w3-text-teal">
-            <i class="fa fa-calendar fa-fw w3-margin-right"></i>Julio 2025 - <span class="w3-tag w3-teal w3-round">Actualmente</span></h6>
-          <p>Actualmente me encuentro en formación acadèmico 100%virtual por las plataformas Zajuna en Técnico en programación 
-            para  <strong>aplicaciones en dispositivos móviles,</strong> al mismo tiempo en formacón en bootcamp del programa talento Tech Valle del Cauca.
-          </p>
-          <hr>
-          
-        </div>
+        
         <div class="w3-container">
           <h5 class="w3-opacity"><b>Sena / mi_primer_pagina_web.com(modo diseño)</b></h5>
           <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>julio 2025 - Agosto 2025</h6>
@@ -123,7 +130,7 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
         </div>
       </div>
       <!-- Seccion de proyectos -->
-      <div class="w3-container w3-card w3-white w3-margin-bottom">
+      <div id="proyectos" class="w3-container w3-card w3-white w3-margin-bottom">
         <h2 class="w3-text-grey w3-padding-16">
           <i class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Proyectos</h2>
         <div class="w3-container">
@@ -150,12 +157,12 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
 
 
 
-      <div class="w3-container w3-card w3-white">
+      <div id="educacion" class="w3-container w3-card w3-white">
         <h2 class="w3-text-grey w3-padding-16">
-          <i class="fa fa-certificate fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Education</h2>
+          <i class="fa fa-certificate fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Educación</h2>
         <div class="w3-container">
           <h5 class="w3-opacity"><b>W3Schools.com</b></h5>
-          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Forever</h6>
+          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>En constante actualización</h6>
           <p>Desarrollo web, sitio que permite aprender con laboratorios prácticos y plantillas, la creaciòn
             de sitios web.
           </p>
@@ -173,13 +180,29 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
           <p>Bachiller</p><br>
         </div>
       </div>
+       <section id="formulario">
+  <form class="form_contacto" action="">
+    <h3>Contáctame</h3>
+
+    <input type="text" name="nombre" required placeholder="Nombre completo">
+    <input type="email" name="email" required placeholder="example@gmail.com">
+    <input type="datetime-local" name="fecha">
+    <textarea name="descripcion" placeholder="Comenta aquí"></textarea>
+    
+    <button type="submit" name="enviar" class="w3-button w3-teal">Enviar</button>
+  </form>
+</section>
 
     <!-- End Right Column -->
     </div>
+
+    
    <!-- End Grid -->
   </div>
+
+ 
  <!-- End Page Container -->
-</div>
+</main>
 
 <footer class="w3-container w3-teal w3-center w3-margin-top">
   <p>Javier Vera Ramìrez 2025.</p>
