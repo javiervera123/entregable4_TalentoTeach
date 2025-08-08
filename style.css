@@ -1,0 +1,23 @@
+
+    body {
+      background-color: rgba(222, 222, 231, 0.884);
+      color: black;
+      font-family: Arial, sans-serif;
+    }
+    h1, h2, p {
+      text-align: center;
+    }
+    img {
+      display: block;
+      margin: 0 auto;
+    }
+    table {
+      width: 50%;
+      margin: 0 auto;
+      border-collapse: collapse;
+    }
+    td {
+      padding: 10px;
+      text-align: center;
+    }
+  

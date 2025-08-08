@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hoja de Vida - Javier Vera</title>
+
+  <!-- Estilos -->
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto" />
+
+  <style>
+    body {
+      font-family: 'Roboto', sans-serif;
+    }
+
+    .w3-bar a:hover {
+      background-color: #ccc !important;
+      color: black !important;
+    }
+
+    section {
+      padding: 64px 16px;
+    }
+
+    .submenu {
+      display: none;
+    }
+
+    .w3-bar-item:hover .submenu {
+      display: block;
+      position: absolute;
+      background-color: white;
+      z-index: 1;
+      min-width: 160px;
+    }
+
+    .submenu a {
+      display: block;
+      padding: 12px 16px;
+      text-decoration: none;
+      color: black;
+    }
+
+    .submenu a:hover {
+      background-color: #f1f1f1;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- MENÚ SUPERIOR -->
+  <nav class="w3-bar w3-teal w3-top w3-large">
+    <a href="#inicio" class="w3-bar-item w3-button">Inicio</a>
+    <a href="#educacion" class="w3-bar-item w3-button">Educación</a>
+    <a href="#experiencia" class="w3-bar-item w3-button">Experiencia</a>
+    <a href="#habilidades" class="w3-bar-item w3-button">Habilidades</a>
+
+    <!-- Submenú personalizado -->
+    <div class="w3-bar-item w3-button">
+      Contacto <i class="fa fa-caret-down"></i>
+      <div class="submenu">
+        <a href="#formulario">Formulario</a>
+        <a href="#perfil">LinkedIn</a>
+        <a href="#correo">Correo</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- CONTENIDO PRINCIPAL -->
+  <main style="margin-top:60px">
+    <section id="inicio">
+      <h2>Inicio</h2>
+      <p>Bienvenido a mi hoja de vida profesional.</p>
+    </section>
+
+    <section id="educacion">
+      <h2>Educación</h2>
+      <p>Detalles sobre estudios y formación.</p>
+    </section>
+
+    <section id="experiencia">
+      <h2>Experiencia</h2>
+      <p>Experiencia laboral, proyectos, etc.</p>
+    </section>
+
+    <section id="habilidades">
+      <h2>Habilidades</h2>
+      <p>Lenguajes, herramientas, fortalezas técnicas.</p>
+    </section>
+
+    <section id="formulario">
+      <h2>Formulario de contacto</h2>
+      <!-- Aquí puedes poner un form real más adelante -->
+    </section>
+
+    <section id="perfil">
+      <h2>Perfil LinkedIn</h2>
+      <a href="https://linkedin.com/in/tuusuario" target="_blank">Mi perfil</a>
+    </section>
+
+    <section id="correo">
+      <h2>Correo Electrónico</h2>
+      <p>Email: javier@example.com</p>
+    </section>
+  </main>
+
+</body>
+</html>
