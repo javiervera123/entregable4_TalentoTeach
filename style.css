@@ -1,6 +1,7 @@
 body{
-  margin-top: 60px;
+  margin-top: 80px;/*para que no quede tapada la informa que sube*/
 }
+
 .banner{
   background-color: rgb(146, 234, 206);
   padding: 1em 0;
