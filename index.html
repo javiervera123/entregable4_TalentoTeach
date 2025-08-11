@@ -39,7 +39,7 @@
   <div class="w3-row-padding">
   
     <!-- Left Column -->
-    <aside class="w3-third">
+    <aside class="w3-third" aria-label="Perfil profesional">
     
       <div class="w3-white w3-text-grey w3-card-4">
         <div class="w3-display-container">
@@ -88,24 +88,24 @@
     <div id="experiencia" class="w3-twothird">
     
       <div id="experiencia" class="w3-container w3-card w3-white w3-margin-bottom">
-        <h2 class="w3-text-grey w3-padding-16">
-          <i class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Experiencia Laboral</h2>
-       <div class="w3-container">
-          <h5 class="w3-opacity"><b>BootCamp Talento Tech/ github</b></h5>
-          <h6 class="w3-text-teal">
-            <i class="fa fa-calendar fa-fw w3-margin-right"></i>Julio 2025 - <span class="w3-tag w3-teal w3-round">Actualmente</span></h6>
-          <p>Actualmente me encuentro en formación acadèmico 100%virtual por las plataformas Zajuna en Técnico en programación 
-            para  <strong>aplicaciones en dispositivos móviles,</strong> al mismo tiempo en formacón en bootcamp del programa talento Tech Valle del Cauca.
-          </p>
+            <h2 class="w3-text-grey w3-padding-16">
+              <i class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Experiencia Laboral</h2>
+            <div class="w3-container">
+              <h5 class="w3-opacity"><b>BootCamp Talento Tech/ github</b></h5>
+              <h6 class="w3-text-teal">
+                <i class="fa fa-calendar fa-fw w3-margin-right"></i>Julio 2025 - <span class="w3-tag w3-teal w3-round">Actualmente</span></h6>
+              <p>Actualmente me encuentro en formación acadèmico 100%virtual por las plataformas Zajuna en Técnico en programación 
+                para  <strong>aplicaciones en dispositivos móviles,</strong> al mismo tiempo en formacón en bootcamp del programa talento Tech Valle del Cauca.
+              </p>
           <hr>          
         </div>
        
-          <div class="w3-container">
-          <h5 class="w3-opacity"><b>Prácticas Sena / Universidad Icesi, Cali</b></h5>
-          <h6 class="w3-text-teal">
-            <i class="fa fa-calendar fa-fw w3-margin-right"></i>Julio 2009 - <span class="w3-tag w3-teal w3-round">Experiencias</span></h6>
-          <p>La práctica la realizé en el área de Tic`, oficina E-learning bajo la supervición de la ingeniera Alexandra Gómez,
-            dándome permisos a las siguientes plataformas de la institución para gestionar el rol de admin:
+        <div class="w3-container">
+              <h5 class="w3-opacity"><b>Prácticas Sena / Universidad Icesi, Cali</b></h5>
+              <h6 class="w3-text-teal">
+              <i class="fa fa-calendar fa-fw w3-margin-right"></i>Julio 2009 - <span class="w3-tag w3-teal w3-round">Experiencias</span></h6>
+              <p>La práctica la realizé en el área de Tic`, oficina E-learning bajo la supervición de la ingeniera Alexandra Gómez,
+                dándome permisos a las siguientes plataformas de la institución para gestionar el rol de admin:
             <ul>
                   <li>Moodle</li>
                   <li>Repositorio local de la universidad</li>
@@ -183,23 +183,23 @@
                 <p>Bachiller</p><br>
               </div>
             </div>
-       <section id="formulario">
-  <form class="form_contacto" onsubmit="return validarFormulario()">
-    <h3>Contáctame</h3>
+  <div id="formulario" class="w3-card w3-padding">
+        <form class="form_contacto" onsubmit="return validarFormulario()">
+            <h3>Contáctame</h3>
 
-    <input type="text" id="nombre" name="nombre" required placeholder="* Nombre completo">
-    <input type="email" id="email" name="email" required placeholder="* example@gmail.com">
-    <input type="datetime-local" name="fecha">
-    <textarea id="comentario" name="mensaje" rows="4" cols="50"></textarea>
-    
-    <label for="archivo">¿Desea anexar un archivo?</label>
-    <input type="file" id="archivo" name="archivo" accept="image/*" onchange="mostrarImagen(event)">  
-    
-    <img id='ver-imagen' src="" class="ver-imagen" alt="Su Documento" style="max-width:200px; display:block; margin-top:10px;">
-    
-    <button type="submit" name="enviar" class="w3-button w3-teal">Enviar</button>
-  </form>
-</section>
+                    <input type="text" id="nombre" name="nombre" required placeholder="* Nombre completo">
+                    <input type="email" id="email" name="email" required placeholder="* example@gmail.com">
+                    <input type="datetime-local" name="fecha">
+                    <textarea id="comentario" name="mensaje" rows="4" cols="50"></textarea>
+                    
+                    <label for="archivo">¿Desea anexar un archivo?</label>
+                    <input type="file" id="archivo" name="archivo" accept="image/*" onchange="mostrarImagen(event)">  
+                    
+                    <img id='ver-imagen' src="" class="ver-imagen" alt="Su Documento" style="max-width:200px; display:block; margin-top:10px;">
+                    
+                    <button type="submit" name="enviar" class="w3-button w3-teal">Enviar</button>
+        </form>
+      </div>
 
     <!-- End Right Column -->
     </div>
@@ -213,13 +213,13 @@
 </main>
 
 <footer class="w3-container w3-teal w3-center w3-margin-top">
-  <p>Javier Vera Ramìrez 2025.</p>
-  <i class="fa fa-facebook-official w3-hover-opacity"></i>
-    <i class="fa fa-snapchat w3-hover-opacity"></i>
-    <i class="fa fa-twitter w3-hover-opacity"></i>
-  <i class="fa fa-linkedin w3-hover-opacity"></i>
-  <p>&copy; Plantilla editada por Javier Augusto Vera</p>
-  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+    <p>Javier Vera Ramìrez 2025.</p>
+         <i class="fa fa-facebook-official w3-hover-opacity"></i>
+          <i class="fa fa-snapchat w3-hover-opacity"></i>
+          <i class="fa fa-twitter w3-hover-opacity"></i>
+         <i class="fa fa-linkedin w3-hover-opacity"></i>
+         <p>&copy; Plantilla editada por Javier Augusto Vera</p>
+         <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
 </footer>
 
 </body>

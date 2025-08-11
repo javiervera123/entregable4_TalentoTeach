@@ -9,7 +9,20 @@ body {
   z-index: 1000;
   position: fixed;
 }
-
+#formulario{  /* contenedor div*/
+  width: 500px;
+  padding: 10px 10px;
+  border-radius: 15px;
+  margin-left: 15px;
+  box-shadow:0 2px 5px 0 #009688);
+}
+aside {
+  position: sticky; /* O fixed, es para efectos*/
+  top: 70px;     /* Desde dónde empieza, no queda debajo del banner */
+  height: 100vh;    /* Ocupar toda la altura de la ventana */
+  overflow-y: auto; /* Scroll interno si el contenido es largo */
+  margin:0;
+}
 /* Menú principal */
 nav {
   display: flex;
