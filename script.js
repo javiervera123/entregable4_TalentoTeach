@@ -1,10 +1,14 @@
-// Botón hamburguesa: mostrar/ocultar menú principal en móviles
-document.getElementById('nav-toggle').addEventListener('click', function() {
-    document.getElementById('nav-menu').classList.toggle('show');
+// Botón hamburguesa: mostrar/ocultar menú en móviles
+// Mostrar/ocultar el menú en móviles
+const botonMenu = document.getElementById("nav-toggle");
+  const menu = document.getElementById("nav-menu");
+
+  botonMenu.addEventListener("click", () => {
+    menu.classList.toggle("open");
   });
 
 
-  
+
 // Validar formulario
 function validarFormulario() {
   let nombre = document.getElementById("nombre").value.trim();

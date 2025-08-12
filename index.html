@@ -4,34 +4,49 @@
 <title>Hoja de vida Javier Vera Con plantilla W3</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
 <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
+
 <body class="w3-light-grey">
    <!-- MENÚ SUPERIOR -->
-<header class="banner">   
-  <nav>
-    <span style="color:rgb(42, 163, 113); font-weight:bold; margin-left:10px;">Menú</span>
-    <button id="nav-toggle">&#9776;</button>
-    <ul id="nav-menu">
-      <li><a href="#inicio">Inicio</a></li>
-      <li><a href="#educacion">Educación</a></li>
-      <li><a href="#experiencia">Experiencia</a></li>
-      <li><a href="#habilidades">Habilidades</a></li>
-      <li><a href="#proyectos">Proyectos</a></li>
-      <li>
-        <a href="#" class="submenu-toggle">Contacto ▾</a> 
-        <ul class="submenu">
-          <li><a href="#formulario">Formulario</a></li>
-          <li><a href="#perfil">LinkedIn</a></li>
-          <li><a href="#correo">Correo</a></li>
-        </ul>
-      </li>
-    </ul>
-  </nav>
-</header>
+  <header class="banner">
+ 
+      <img class="logo" src="image/html5.png" alt="logo">
+      <button id="nav-toggle" class="nav-toggle" >☰</button>
+          <nav id="nav-menu" class="w3-bar">
+             <div class="w3-bar w3-light-grey">
+
+                <a href="#inicio" class="w3-bar-item w3-button">Inicio</a>
+                <a href="#acercade" class="w3-bar-item w3-button">Acerca de</a>
+                <a href="#experiencia" class="w3-bar-item w3-button">Experiencia</a>
+                <a href="#habilidades" class="w3-bar-item w3-button">Habilidades</a>
+
+                  <!-- Menú desplegable Mis Proyectos -->
+           <div class="w3-dropdown-hover w3-mobile">        
+             <button class="w3-button">Mis Proyectos<i class="fa fa-caret-down"></i></button>
+                <div class="w3-dropdown-content w3-bar-block w3-card-4">
+                  <a href="#" class="w3-bar-item w3-button w3-mobile">Base de datos SQL</a>
+                  <a href="#" class="w3-bar-item w3-button w3-mobile">Base de datos NoSQL</a>
+                  <a href="#" class="w3-bar-item w3-button w3-mobile">Tienda Virtual Emily</a>
+                </div>
+           </div>
+      <!-- Menú desplegable Contacto -->
+          <div class="w3-dropdown-hover w3-mobile">
+            <button class="w3-button">Contacto<i class="fa fa-caret-down"></i></button>
+              <div class="w3-dropdown-content w3-bar-block w3-card-4">
+                  <a href="#" class="w3-bar-item w3-button w3-mobile">Formulario</a>
+                  <a href="#" class="w3-bar-item w3-button w3-mobile">Menu 2</a>
+                  <a href="#" class="w3-bar-item w3-button w3-mobile">Menu 3</a>
+             </div>
+          </div>
+
+       </div>
+     </nav>
+  </header>
 
   <!-- Contenedor principal -->
 <main class="w3-content w3-margin-top" style="max-width:1400px;">
@@ -39,7 +54,7 @@
   <div class="w3-row-padding">
   
     <!-- Left Column -->
-    <aside class="w3-third" aria-label="Perfil profesional">
+    <aside class="w3-third" w3-margin-top aria-label="Perfil profesional">
     
       <div class="w3-white w3-text-grey w3-card-4">
         <div class="w3-display-container">
