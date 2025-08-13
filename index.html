@@ -170,7 +170,17 @@
                 <p>Este es un proyecto en fase de diseño para cubrir la necesidad de un usuario real en su tienda física de 
                   sistematizar todos los procesos que actualmente son manuales. Además vinculará pasarela de pago que hará 
                   que pueda aumentar sus ventas online. </p><br>
-        </div>
+                  <!-- etiqueta tipo acordeón -->
+                    <details>
+                          <summary>Temas trabajados</summary>
+                               <ul>
+                                  <li>Diseño Base de datos SQL()</li>
+                                  <li>Base da datos NoSQL(mysql - MongoDB)</li>
+                                  <li>Base de datos SQL(mysql- workBench)</li>
+                                  <li>Base da datos NoSQL(mysql - MongoDB)</li>
+                              </ul>
+                    </details>
+          </div>
       </div>
 
 
@@ -200,19 +210,22 @@
             </div>
   <div id="formulario" class="w3-card w3-padding">
         <form class="form_contacto" onsubmit="return validarFormulario()">
-            <h3>Contáctame</h3>
+            <fieldset>
+                <legend>Ingrese sus datos</legend>
 
                     <input type="text" id="nombre" name="nombre" required placeholder="* Nombre completo">
                     <input type="email" id="email" name="email" required placeholder="* example@gmail.com">
                     <input type="datetime-local" name="fecha">
-                    <textarea id="comentario" name="mensaje" rows="4" cols="50"></textarea>
+                    <textarea id="comentario" name="mensaje" placeholder="Comenta aquí" rows="4" cols="35"></textarea>
                     
-                    <label for="archivo">¿Desea anexar un archivo?</label>
+                    <label for="archivo">¿Deseas anexar una imagen?</label>
                     <input type="file" id="archivo" name="archivo" accept="image/*" onchange="mostrarImagen(event)">  
-                    
-                    <img id='ver-imagen' src="" class="ver-imagen" alt="Su Documento" style="max-width:200px; display:block; margin-top:10px;">
+                     <!-- espacio para que el usuario vea la imágen -->
+                    <img id='ver-imagen' src="" class="ver-imagen" alt="Su Imágen" style="max-width:200px; display:block; margin-top:10px;">
                     
                     <button type="submit" name="enviar" class="w3-button w3-teal">Enviar</button>
+                    <div> Respuesta del servidor " en desarrollo"</div>
+        </fieldset>       
         </form>
       </div>
 
@@ -236,6 +249,6 @@
          <p>&copy; Plantilla editada por Javier Augusto Vera</p>
          <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
 </footer>
-
+<script  src="script.js"></script>
 </body>
 </html>

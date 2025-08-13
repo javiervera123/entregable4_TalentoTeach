@@ -40,6 +40,29 @@
   padding: 10px;
  
 }
+.form_contacto{ 
+width: 360px;
+margin: 0 auto;
+padding: 20px;
+border: 1px solid #69a7e2;
+border-radius: 20px;
+box-shadow: 2px 2px 0px rgba(0,0,0,0.1);
+background-color: #279f6f;
+}
+legend{
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: larger;
+}
+input, textarea{
+  margin-top: 5px;
+}
+.ver-imagen{
+  width: 120px;
+  height: 120px;
+  display: block;
+  border: 2px solid #69a7e2;
+}
+
 .w3-bar{
 
  color: rgb(9, 69, 22);
@@ -70,7 +93,37 @@
 #nav-toggle {
   display: none;
 }
+/* Inicia css etiq detail*/
+ details {
+    width: 300px;
+    font-family: Arial, sans-serif;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 6px;
+    background-color: #f9f9f9;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  }
 
+  summary {
+    cursor: pointer;
+    padding: 8px;
+    background-color: #2c762d;
+    color: white;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+  }
+
+
+  ol {
+    margin-top: 10px;
+    padding-left: 20px;
+  }
+
+  li {
+    margin: 5px 0;
+  }
+/* termina css etiq detalle */
 
 /* Responsive */
 /* Ocultar menú y mostrar botón hamburguesa en móviles */

@@ -11,8 +11,9 @@ const botonMenu = document.getElementById("nav-toggle");
 
 // Validar formulario
 function validarFormulario() {
-  let nombre = document.getElementById("nombre").value.trim();
-  let email = document.getElementById("email").value.trim();
+  let nombre = document.getElementById("nombre").value;
+  let email = document.getElementById("email").value;
+  
 
   if (nombre === "" || email === "") {
     alert("Los campos con * son obligatorios...");
@@ -27,4 +28,5 @@ function validarFormulario() {
 function mostrarImagen(event) {
   let imagen = document.getElementById('ver-imagen');
   imagen.src = URL.createObjectURL(event.target.files[0]);
+  alert("foto subida satisfactoriamente");
 }
