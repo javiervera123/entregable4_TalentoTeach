@@ -1,90 +1,105 @@
-body {
-  margin-top: 80px; /* evita que el contenido quede debajo del banner fijo */
+.w3-row-padding {
+  margin-top: 100px; /* altura del header */
 }
+*{
+  padding: 0;
+  border: 0;
+  box-sizing: border-box ;
+  font-family: sans-serif;
+}
+.logo{
+  max-width: 4rem;
+}
+.nav-menu{
+  display: flex;/*se posicionan uno al lado del otro*/
+  gap: 1rem;  /*separa el cont */
+ 
+}
+
+/* Banner fijo en la parte superior */
 .banner {
+  display: flex; /* ubica en fila*/
+  align-items: center; 
+   justify-content: space-between;/*separo para quedar en diferentes esquinas*/
+  padding: 2rem; /*queda separaddo del borde*/
   background-color: rgb(24, 98, 75);
   padding: 1em 0;
   width: 100%;
   top: 0;
-  z-index: 1000;
+  z-index: 1000;  /*se posiciona encima de todo*/
   position: fixed;
 }
-#formulario{  /* contenedor div*/
-  width: 500px;
-  padding: 10px 10px;
-  border-radius: 15px;
-  margin-left: 15px;
-  box-shadow:0 2px 5px 0 #009688);
-}
-aside {
-  position: sticky; /* O fixed, es para efectos*/
-  top: 70px;     /* Desde dónde empieza, no queda debajo del banner */
-  height: 100vh;    /* Ocupar toda la altura de la ventana */
-  overflow-y: auto; /* Scroll interno si el contenido es largo */
-  margin:0;
-}
-/* Menú principal */
-nav {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
 
-nav ul {
-  list-style: none;
-  display: flex;
-  margin: 0;
-  padding: 0;
-  background-color: #009688;
-}
-
-nav ul li {
-  position: relative;
-}
-
-nav ul li a {
-  display: block;
-  padding: 10px 15px;
-  color: white;
-  text-decoration: none;
-}
-
-nav ul li a:hover {
-  background-color: #00796b;
-}
-
-/* Submenú */
-.submenu {
-  display: none;
-  position: absolute;
-  top: 100%;
-  left: 0;
-  background-color: white;
-  min-width: 150px;
-  z-index: 1000;
-}
-
-.submenu li a {
-  color: black;
-  padding: 10px;
-}
-
-.submenu li a:hover {
-  background-color: #f0f0f0;
-}
-
-nav ul li:hover .submenu {
-  display: block;
-}
-
-/* Botón hamburguesa */
-#nav-toggle {
-  display: none;
+/* Botón hamburguesa oculto por defecto */
+.btn_hamb {
+  display: none;        /* Oculto en escritorio */
+  font-size: 24px;
   background: none;
   border: none;
-  font-size: 22px;
-  color: white;
   cursor: pointer;
+  padding: 10px;
+ 
+}
+.w3-bar{
+
+ color: rgb(9, 69, 22);
+  align-items: flex-end; /* alinea a la dereccha*/
+  justify-content: flex-end;
+}
+/* Inicia css etiq detail*/
+ details {
+    width: 300px;
+    font-family: Arial, sans-serif;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 6px;
+    background-color: #f9f9f9;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  }
+
+  summary {
+    cursor: pointer;
+    padding: 8px;
+    background-color: #2c762d;
+    color: white;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+  }
+
+
+  ol {
+    margin-top: 10px;
+    padding-left: 20px;
+  }
+
+  li {
+    margin: 5px 0;
+  }
+/* termina css etiq detalle */
+
+.w3-bar .w3-button {
+  color: rgb(9, 69, 22);
+}
+
+/* items del submenu*/
+.w3-dropdown-content a {
+  color: rgb(211, 225, 218);
+  text-decoration-line:underline;
+}
+
+/* contenedor submenu personalizado */
+.w3-dropdown-content {
+   background-color: #c4e8c2;
+  position: absolute;
+  min-width: 150px;
+}
+.w3-dropdown-hover:hover .w3-dropdown-content {
+  display: block;
+}
+/* Botón hamburguesa oculto mientas la pant mayor a 768px */
+#nav-toggle {
+  display: none;
 }
 /* Inicia css etiq detail*/
  details {
@@ -119,17 +134,38 @@ nav ul li:hover .submenu {
 /* termina css etiq detalle */
 
 /* Responsive */
+/* Ocultar menú y mostrar botón hamburguesa en móviles */
 @media (max-width: 768px) {
-  nav ul {
+  /* Ocultar el menú por defecto */
+  #nav-menu {
     display: none;
     flex-direction: column;
-    width: 100%;
+    background-color: #333;
   }
-  nav ul.show {
+
+  /* Mostrar menú cuando tiene la clase "open" */
+  #nav-menu.open {
     display: flex;
   }
+
+
+  /* Mostrar el botón hamburguesa en móviles */
   #nav-toggle {
     display: block;
-    margin-right: 10px;
+    background: none;
+    border: none;
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
   }
+  
+  .w3-dropdown-hover:hover .w3-dropdown-content  {
+  display: block;
+  flex-direction: column;
+}
+.w3-dropdown-content a {
+  display: block;
+
+}
+
 }
