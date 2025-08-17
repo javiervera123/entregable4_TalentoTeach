@@ -41,8 +41,9 @@
  
 }
 .form_contacto{ 
-width: 360px;
-margin: 0 auto;
+width: 400px;
+height: auto;
+margin-top: 14px;
 padding: 20px;
 border: 1px solid #69a7e2;
 border-radius: 20px;
