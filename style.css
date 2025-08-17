@@ -30,6 +30,7 @@
   position: fixed;
 }
 
+
 /* Botón hamburguesa oculto por defecto */
 .btn_hamb {
   display: none;        /* Oculto en escritorio */
@@ -48,7 +49,7 @@ padding: 20px;
 border: 1px solid #69a7e2;
 border-radius: 20px;
 box-shadow: 2px 2px 0px rgba(0,0,0,0.1);
-background-color: #279f6f;
+background-color: #417761;
 }
 legend{
   font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -135,7 +136,9 @@ input, textarea{
     background-color: #f9f9f9;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
   }
-
+  #galeria_fotos  {
+    margin-top: 20px;
+  }
   summary {
     cursor: pointer;
     padding: 8px;
@@ -193,3 +196,34 @@ input, textarea{
 }
 
 }
+/*estilos de las imágenes*/
+.catalogo {
+      display: grid; /* Grid para organizar las imágenes en columnas.*/
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); 
+      gap: 15px;
+    }
+    /* cada imagen tiene un recuadro con sombra y texto.*/
+    .item {
+      background: white;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+      text-align: center;
+      transition: transform 0.2s;
+    }
+
+    .item:hover { /*efecto de ampliar*/
+      transform: scale(1.05);
+    }
+
+    .item img {
+      width: 100%;
+      height: 150px;
+      object-fit: cover;/* asegura que la imagen no se deforme*/
+    }
+
+    .item p {
+      margin: 10px;
+      font-weight: bold;
+    }
+    
